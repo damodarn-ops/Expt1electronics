@@ -498,6 +498,7 @@ with tab4:
     # ------------------------------------------------------------------
     # --- Simulation Results Table ---
     st.markdown("---") # Horizontal line for separation
+    st.markdown("To record data for tabulation, click on **Log Current Simulation**")   
     st.header("Simulation Results")
     
     # Create a placeholder for the table display
@@ -629,3 +630,5 @@ with tab6:
     st.slider("How would you rate this simulator?(best -5)", 1, 5)
     st.text_area("Your comments...")
     st.button("Submit Feedback")
+    if st.button("Submit Feedback"):
+     st.success("Thank you for your valuable suggestion!")
